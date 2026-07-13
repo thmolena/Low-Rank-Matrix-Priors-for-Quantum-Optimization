@@ -4,9 +4,9 @@
     "n_ref": 8,
     "window": 6,
     "oracle_free": false,
-    "q4_baseline": 2.982227507000348e-05,
-    "tiled_error": 1.284606352720798e-09,
-    "direct_error": 1.284606352720798e-09,
+    "q4_baseline": 2.9822275068155604e-05,
+    "tiled_error": 1.2846073141480851e-09,
+    "direct_error": 1.2846073141480851e-09,
     "rel_mismatch": 0.0
   },
   {
@@ -14,9 +14,9 @@
     "n_ref": 8,
     "window": 6,
     "oracle_free": true,
-    "q4_baseline": 3.918192698424711e-05,
-    "tiled_error": 6.604473751617983e-08,
-    "direct_error": 2.0269423216302374e-09,
-    "rel_mismatch": 31.583432104304332
+    "q4_baseline": 3.918192698325159e-05,
+    "tiled_error": 6.604473779593048e-08,
+    "direct_error": 2.0269426727400686e-09,
+    "rel_mismatch": 31.583426598172927
   }
 ]
