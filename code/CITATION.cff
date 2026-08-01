@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying manuscript."
+title: "A Negative Audit of Low-Rank Matrix Priors for QAOA Parameter Prediction"
+type: software
+authors:
+  - family-names: Huynh
+    given-names: Molena
+version: 1.1.0
+date-released: 2026-07-31
+license: MIT
+preferred-citation:
+  type: article
+  title: "A Negative Audit of Low-Rank Matrix Priors for QAOA Parameter Prediction"
+  authors:
+    - family-names: Huynh
+      given-names: Molena
+  year: 2026

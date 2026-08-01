@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "title": "A Negative Audit of Low-Rank Matrix Priors for QAOA Parameter Prediction",
+  "package": "hqml-lie-residual",
+  "canonical_results": {
+    "path": "code/results/results.json",
+    "sha256": "dbcd25e0fecbd6aa7a772112698a0566f7654d0e86e87465758511d1de367c9a",
+    "timing_note": "Keys ending in seconds and platform strings are measured snapshots and excluded from deterministic comparison."
+  },
+  "authenticated_sources": {
+    "G1": "73bf704d8ffc55ba42260ab4cb659e3dcb6e729be70404d2cf476ba4e46d1665",
+    "G81": "74e69d2f5228774cedbdb86da14debf08023556f1d7693b7346ca13df7594d5a"
+  },
+  "figure_allowlist": [
+    "fig_baseline_audit.pdf",
+    "fig_bound_audit.pdf",
+    "fig_rank_audit.pdf",
+    "fig_runtime_audit.pdf"
+  ],
+  "commands": {
+    "reproduce": "qaoa-rcol-reproduce --verify",
+    "tests": "python -m pytest -q code/tests",
+    "figures": "qaoa-rcol-reproduce --write",
+    "validate": "python code/scripts/validate_release.py"
+  }
+}

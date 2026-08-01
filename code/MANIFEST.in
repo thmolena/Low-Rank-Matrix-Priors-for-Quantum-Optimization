@@ -1,0 +1,8 @@
+include LICENSE
+include CITATION.cff
+include README.md
+include evidence_manifest.json
+include reproduce.py
+include requirements.txt
+recursive-include results *.json *.tex *.pdf
+recursive-include tests *.py

@@ -1,0 +1,2 @@
+# SHA-256 for redistributed data files under code/data.
+# Externally cached inputs are pinned in the package evidence manifest.

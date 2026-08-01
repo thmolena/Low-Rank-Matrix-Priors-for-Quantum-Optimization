@@ -1,0 +1,45 @@
+{
+  "schema_version": 3,
+  "title": "A Negative Audit of Low-Rank Matrix Priors for QAOA Parameter Prediction",
+  "package": "hqml_lie_residual",
+  "seed": 1101,
+  "task": "negative audit of a transductive low-rank QAOA angle prior",
+  "locked_results": {
+    "file": "results/results.json",
+    "sha256": "dbcd25e0fecbd6aa7a772112698a0566f7654d0e86e87465758511d1de367c9a"
+  },
+  "method_boundary": {
+    "global_dense_matrix_materialized_in_proposed_path": false,
+    "dense_learning_audit_records": 48,
+    "low_rank": 2,
+    "high_rank": 4,
+    "maximum_prior_weight": 0.2,
+    "sampled_action_error_is_certificate": false,
+    "inductive_generalization_claimed": false,
+    "speedup_claimed": false,
+    "strongest_observed_baseline": "k-nearest neighbors"
+  },
+  "public_data": [
+    {
+      "name": "Stanford Gset G1",
+      "url": "https://web.stanford.edu/~yyye/yyye/Gset/G1",
+      "sha256": "73bf704d8ffc55ba42260ab4cb659e3dcb6e729be70404d2cf476ba4e46d1665",
+      "cache_environment_variable": "HQML_G1_PATH",
+      "redistributed": false
+    },
+    {
+      "name": "Stanford Gset G81",
+      "url": "https://web.stanford.edu/~yyye/yyye/Gset/G81",
+      "sha256": "74e69d2f5228774cedbdb86da14debf08023556f1d7693b7346ca13df7594d5a",
+      "cache_environment_variable": "HQML_G81_PATH",
+      "redistributed": false
+    }
+  ],
+  "verification": {
+    "install": "python -m pip install \"./code[test]\"",
+    "fetch": "qaoa-rcol-reproduce --fetch-data",
+    "reproduce": "qaoa-rcol-reproduce --verify",
+    "tests": "python -m pytest -q code/tests",
+    "validate": "python code/scripts/validate_release.py"
+  }
+}

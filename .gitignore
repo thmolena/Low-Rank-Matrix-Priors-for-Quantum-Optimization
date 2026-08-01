@@ -1,5 +1,6 @@
 # Python
 __pycache__/
+.ruff_cache/
 *.py[cod]
 *.egg-info/
 *.egg
@@ -25,8 +26,9 @@ Thumbs.db
 *.swp
 *.swo
 
-# LaTeX build artifacts (keep .tex, .bib, .bbl and the compiled .pdf)
+# LaTeX build artifacts (keep .tex, .bib, and the compiled .pdf)
 *.aux
+*.bbl
 *.log
 *.out
 *.blg
@@ -34,3 +36,4 @@ Thumbs.db
 *.fdb_latexmk
 *.synctex.gz
 *.toc
+mainNotes.bib

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hqml-lie-residual"
+version = "1.1.0"
+description = "Deterministic audit of low-rank QAOA parameter priors"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0,<3", "matplotlib>=3.9,<4"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+qaoa-rcol-reproduce = "hqml_lie_residual.experiment:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["hqml_lie_residual*"]
+
+[tool.setuptools.package-data]
+"hqml_lie_residual" = ["results/*", "results/figures/*"]
